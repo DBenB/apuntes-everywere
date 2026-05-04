@@ -1,0 +1,8 @@
+---
+title: "Ts_Ia_Generativa"
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+---

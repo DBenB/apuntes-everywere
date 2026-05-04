@@ -1,0 +1,10 @@
+---
+title: "2nda Clase"
+author: "Daniel F."
+date: "2026-05-02"
+categories: []
+draft: false
+---
+# Sin título
+
+<!-- obsidian-sync:{"source":"HPCIII/2nda Clase.md","hash":"bbd2a85f1d12f0800f18732f076ac4e732af272eba0fdc5a0ed51f0080bb81a6"} -->

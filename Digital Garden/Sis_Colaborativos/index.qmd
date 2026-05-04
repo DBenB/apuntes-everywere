@@ -1,0 +1,8 @@
+---
+title: "Sis_Colaborativos"
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+---

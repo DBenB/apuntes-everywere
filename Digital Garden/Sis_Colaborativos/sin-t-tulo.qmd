@@ -1,0 +1,10 @@
+---
+title: "Sin título"
+author: "Daniel F."
+date: "2026-05-01"
+categories: ["\"- Ponderacion\""]
+draft: true
+---
+# Sin título
+
+<!-- obsidian-sync:{"source":"Sis_Colaborativos/Introduccion.md","hash":"7d8c19e72f7e840ccc2c0615956fe7681a3f94c738d09db95d08b6071609c01e"} -->

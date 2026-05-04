@@ -1,0 +1,33 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/Digital Garden/HPCIII/index.html",
+      "/Digital Garden/Sis_Colaborativos/index.html",
+      "/Digital Garden/Sis_Distribuidos/index.html",
+      "/Digital Garden/TS_IA_Generativa/index.html"
+    ]
+  },
+  {
+    "listing": "/Digital Garden/HPCIII/index.html",
+    "items": [
+      "/Digital Garden/HPCIII/1era-clase.html",
+      "/Digital Garden/HPCIII/2nda-clase.html",
+      "/Digital Garden/HPCIII/lntroduccion.html"
+    ]
+  },
+  {
+    "listing": "/Digital Garden/TS_IA_Generativa/index.html",
+    "items": [
+      "/Digital Garden/TS_IA_Generativa/lntro.html"
+    ]
+  },
+  {
+    "listing": "/Digital Garden/Sis_Distribuidos/index.html",
+    "items": []
+  },
+  {
+    "listing": "/Digital Garden/Sis_Colaborativos/index.html",
+    "items": []
+  }
+]

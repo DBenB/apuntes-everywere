@@ -1,0 +1,8 @@
+---
+title: "Hpciii"
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+---

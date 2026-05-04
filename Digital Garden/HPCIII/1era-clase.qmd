@@ -1,0 +1,10 @@
+---
+title: "1era clase"
+author: "Daniel F."
+date: "2026-05-02"
+categories: []
+draft: false
+---
+# Titulo 1era clase
+
+<!-- obsidian-sync:{"source":"HPCIII/1era Clase.md","hash":"e8cd5fce29c365841b0a8cda1c2b93ea7b4fcd2fc1348537b6746511bcf97000"} -->

@@ -1,0 +1,10 @@
+---
+title: "lntroduccion"
+author: "Daniel F."
+date: "2026-04-29"
+categories: ["Ponderacion"]
+draft: false
+---
+# Contenido del curso:![](my_plot.png)
+
+<!-- obsidian-sync:{"source":"HPCIII/Introduccion.md","hash":"482b7bd1642480c05f1d828c3391df8bef67ce7f4c0539afceb1265f64be6452"} -->

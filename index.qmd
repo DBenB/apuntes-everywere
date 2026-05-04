@@ -1,0 +1,21 @@
+<!--
+Autor: Daniel Benavides
+Fecha: 2026-05-02
+-->
+
+---
+title: "Mis Materias"
+listing:
+  - id: materias
+    contents: 
+      - "Digital Garden/*/index.qmd"
+    type: grid
+    fields: [title] # <--- Añade esto
+    sort: "title asc"
+---
+
+Bienvenido a mi Digital Garden. Aquí publico mis apuntes y proyectos.
+
+## Materias
+:::{#materias}
+:::

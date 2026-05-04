@@ -1,0 +1,10 @@
+---
+title: "Sin título"
+author: "Daniel F."
+date: "2026-05-01"
+categories: ["\"- Ponderacion\""]
+draft: true
+---
+# Sin título
+
+<!-- obsidian-sync:{"source":"Sis_Distribuidos/Introduccion.md","hash":"6f2b7885e7085f3e1930cc3c9d8b1f14306f38674e44c282b6dd6bbf99ecdf2e"} -->

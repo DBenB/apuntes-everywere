@@ -1,0 +1,10 @@
+---
+title: "lntro"
+author: "Daniel F."
+date: "2026-05-02"
+categories: []
+draft: false
+---
+# Intro
+
+<!-- obsidian-sync:{"source":"TS_IA_Generativa/Intro.md","hash":"0dce3f345a18498b054b380ab3012811cc5a7102191b54d1f074e9c803b56e99"} -->

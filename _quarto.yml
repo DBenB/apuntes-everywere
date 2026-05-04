@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: _site # Quarto pondrá la web compilada aquí para no ensuciar tu carpeta
+
+website:
+  title: "Mi Cerebro Digital"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: Digital Garden/HPCIII/index.qmd
+        text: HPC III
+
+format:
+  html:
+    theme: cosmo # Puedes cambiarlo por darkly, slate, cyborg, etc.
+    css: styles.css
+    toc: true

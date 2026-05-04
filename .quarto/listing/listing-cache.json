@@ -1,0 +1,19 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "Digital Garden/*/index.qmd"
+    ],
+    "Digital Garden/TS_IA_Generativa/index.qmd": [
+      "*.qmd"
+    ],
+    "Digital Garden/Sis_Distribuidos/index.qmd": [
+      "*.qmd"
+    ],
+    "Digital Garden/HPCIII/index.qmd": [
+      "*.qmd"
+    ],
+    "Digital Garden/Sis_Colaborativos/index.qmd": [
+      "*.qmd"
+    ]
+  }
+}
