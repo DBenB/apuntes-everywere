@@ -1,0 +1,84 @@
+/* =========================================================
+   Global Variables
+   ========================================================= */
+:root {
+  --agave-blue: #153243;
+  --rosa-mexicano: #E4007C;
+  --terracotta: #D95C41;
+  --base-bg: #F9F8F6;
+}
+
+body {
+  background-color: var(--base-bg);
+  color: var(--agave-blue);
+}
+
+/* =========================================================
+   Typography & Headings
+   ========================================================= */
+h1, h2, h3, h4, h5 {
+  color: var(--terracotta);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+a {
+  color: var(--rosa-mexicano);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* =========================================================
+   Navbar (Modern & Technical)
+   ========================================================= */
+.navbar {
+  background-color: var(--agave-blue) !important;
+  border-bottom: 4px solid var(--rosa-mexicano);
+}
+
+.navbar .nav-link, .navbar-brand {
+  color: var(--base-bg) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--rosa-mexicano) !important;
+  text-decoration: none;
+}
+
+/* =========================================================
+   Grid Cards (Flat Geometric Design)
+   ========================================================= */
+.quarto-grid-item.card {
+  background-color: #FFFFFF;
+  border: 2px solid var(--agave-blue);
+  border-radius: 0 !important; /* Sharp edges */
+  box-shadow: 6px 6px 0px var(--agave-blue); /* Solid brutalist shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quarto-grid-item.card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--rosa-mexicano);
+  border-color: var(--rosa-mexicano);
+}
+
+.card-title {
+  color: var(--agave-blue) !important;
+  font-weight: bold;
+}
+
+/* =========================================================
+   Code Blocks
+   ========================================================= */
+div.sourceCode {
+  background-color: #FFFFFF;
+  border: 2px solid var(--agave-blue);
+  border-radius: 0;
+  box-shadow: 4px 4px 0px rgba(21, 50, 67, 0.1);
+}
