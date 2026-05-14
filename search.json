@@ -7,11 +7,95 @@
     "text": "Sin título\n\n\n\n\"- Ponderacion\"\n\n\n\n\n\n\n\n\n\nMay 1, 2026\n\n\nDaniel F.\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "Digital Garden/HPCIII/lntroduccion.html",
-    "href": "Digital Garden/HPCIII/lntroduccion.html",
-    "title": "lntroduccion",
+    "objectID": "Digital Garden/HPCIII/2nda-clase.html",
+    "href": "Digital Garden/HPCIII/2nda-clase.html",
+    "title": "2nda Clase",
     "section": "",
-    "text": "Contenido del curso:"
+    "text": "Para determinar si se requieren herramientas especializadas, se evalúan las siguientes dimensiones:\n\nVolumen: Se refiere a una cantidad de datos tan grande que resulta difícil de almacenar, procesar y analizar en una sola máquina.\nVelocidad: Es la rapidez con la que se generan los datos, siendo la razón principal de su crecimiento exponencial. Esta acumulación masiva en cortos periodos de tiempo obliga a que ciertas aplicaciones con plazos estrictos analicen la información en tiempo real.\nVariedad: Implica recolectar datos de múltiples fuentes y en diversos formatos, ya sean estructurados, semi-estructurados o no estructurados (como texto, imágenes, audio, video y datos de sensores).\nVeracidad: Hace referencia a la precisión de la información. Es crucial limpiar los datos para filtrar registros incorrectos o defectuosos y así eliminar el “ruido”.\nValor: Es la utilidad de los datos para un propósito específico. Extraer este valor es el objetivo final de cualquier sistema de analítica de Big Data.\n\n\n\n\n\nEl análisis a esta escala requiere arquitecturas de procesamiento paralelo y distribuido que aprovechan los recursos de cómputo y almacenamiento de grandes clusters de máquinas. Este ecosistema es posible gracias a tecnologías como:\n\nComputación en la nube (Cloud computing).\nFrameworks de procesamiento distribuido y paralelo.\nBases de datos no relacionales.\nComputación en memoria (In-memory computing).\n\n\n\n\n\nEl ciclo de vida de los datos implica varias etapas secuenciales para transformar información cruda en conocimiento útil:\n\n\n\nAntes del análisis, la información debe ser capturada desde las fuentes crudas (raw data sources) hacia los sistemas de Big Data.\nLa elección de herramientas depende completamente de la fuente y el tipo de dato que se está ingiriendo.\n\n\n\n\n\nPor lo general, los datos crudos están “sucios” y presentan errores como registros corruptos, valores faltantes, duplicados, inconsistencias en unidades o abreviaturas, errores tipográficos y mal formato.\nLimpieza (Data Cleansing): Detecta y resuelve los registros corruptos, faltantes o con mal formato.\nWrangling / Munging: Transforma los datos de un formato crudo a otro, por ejemplo, homogeneizando si un archivo usa comas o tabuladores como separador.\nNormalización: Se aplica cuando la información de distintas fuentes utiliza diferentes escalas, unidades o abreviaturas para lo mismo.\nFiltrado y Muestreo: Útiles para procesar únicamente los datos que cumplen con ciertas reglas.\nTambién se realizan tareas de de-duplicación.\n\n\n\n\n\nDependiendo de los requerimientos, el análisis puede procesarse por lotes (batch) o en tiempo real.\nSe ejecutan diferentes tipos de analítica para extraer valor: descriptiva, diagnóstica, predictiva y prescriptiva.\n\n\n\n\n\nLa elección de bases de datos, herramientas de visualización y frameworks web depende de las necesidades de la aplicación.\nEstáticas: Utilizadas cuando los resultados ya están almacenados y solo se necesita mostrarlos.\nDinámicas: Requeridas si la aplicación necesita que los resultados se actualicen con regularidad.\nInteractivas: Necesarias cuando la aplicación debe aceptar entradas (inputs) del usuario para desplegar los resultados."
+  },
+  {
+    "objectID": "Digital Garden/HPCIII/2nda-clase.html#características-del-big-data-las-5-v",
+    "href": "Digital Garden/HPCIII/2nda-clase.html#características-del-big-data-las-5-v",
+    "title": "2nda Clase",
+    "section": "",
+    "text": "Para determinar si se requieren herramientas especializadas, se evalúan las siguientes dimensiones:\n\nVolumen: Se refiere a una cantidad de datos tan grande que resulta difícil de almacenar, procesar y analizar en una sola máquina.\nVelocidad: Es la rapidez con la que se generan los datos, siendo la razón principal de su crecimiento exponencial. Esta acumulación masiva en cortos periodos de tiempo obliga a que ciertas aplicaciones con plazos estrictos analicen la información en tiempo real.\nVariedad: Implica recolectar datos de múltiples fuentes y en diversos formatos, ya sean estructurados, semi-estructurados o no estructurados (como texto, imágenes, audio, video y datos de sensores).\nVeracidad: Hace referencia a la precisión de la información. Es crucial limpiar los datos para filtrar registros incorrectos o defectuosos y así eliminar el “ruido”.\nValor: Es la utilidad de los datos para un propósito específico. Extraer este valor es el objetivo final de cualquier sistema de analítica de Big Data."
+  },
+  {
+    "objectID": "Digital Garden/HPCIII/2nda-clase.html#tecnologías-habilitadoras",
+    "href": "Digital Garden/HPCIII/2nda-clase.html#tecnologías-habilitadoras",
+    "title": "2nda Clase",
+    "section": "",
+    "text": "El análisis a esta escala requiere arquitecturas de procesamiento paralelo y distribuido que aprovechan los recursos de cómputo y almacenamiento de grandes clusters de máquinas. Este ecosistema es posible gracias a tecnologías como:\n\nComputación en la nube (Cloud computing).\nFrameworks de procesamiento distribuido y paralelo.\nBases de datos no relacionales.\nComputación en memoria (In-memory computing)."
+  },
+  {
+    "objectID": "Digital Garden/HPCIII/2nda-clase.html#el-pipeline-de-análisis-de-datos",
+    "href": "Digital Garden/HPCIII/2nda-clase.html#el-pipeline-de-análisis-de-datos",
+    "title": "2nda Clase",
+    "section": "",
+    "text": "El ciclo de vida de los datos implica varias etapas secuenciales para transformar información cruda en conocimiento útil:\n\n\n\nAntes del análisis, la información debe ser capturada desde las fuentes crudas (raw data sources) hacia los sistemas de Big Data.\nLa elección de herramientas depende completamente de la fuente y el tipo de dato que se está ingiriendo.\n\n\n\n\n\nPor lo general, los datos crudos están “sucios” y presentan errores como registros corruptos, valores faltantes, duplicados, inconsistencias en unidades o abreviaturas, errores tipográficos y mal formato.\nLimpieza (Data Cleansing): Detecta y resuelve los registros corruptos, faltantes o con mal formato.\nWrangling / Munging: Transforma los datos de un formato crudo a otro, por ejemplo, homogeneizando si un archivo usa comas o tabuladores como separador.\nNormalización: Se aplica cuando la información de distintas fuentes utiliza diferentes escalas, unidades o abreviaturas para lo mismo.\nFiltrado y Muestreo: Útiles para procesar únicamente los datos que cumplen con ciertas reglas.\nTambién se realizan tareas de de-duplicación.\n\n\n\n\n\nDependiendo de los requerimientos, el análisis puede procesarse por lotes (batch) o en tiempo real.\nSe ejecutan diferentes tipos de analítica para extraer valor: descriptiva, diagnóstica, predictiva y prescriptiva.\n\n\n\n\n\nLa elección de bases de datos, herramientas de visualización y frameworks web depende de las necesidades de la aplicación.\nEstáticas: Utilizadas cuando los resultados ya están almacenados y solo se necesita mostrarlos.\nDinámicas: Requeridas si la aplicación necesita que los resultados se actualicen con regularidad.\nInteractivas: Necesarias cuando la aplicación debe aceptar entradas (inputs) del usuario para desplegar los resultados."
+  },
+  {
+    "objectID": "Digital Garden/HPCIII/index.html",
+    "href": "Digital Garden/HPCIII/index.html",
+    "title": "Hpciii",
+    "section": "",
+    "text": "1era clase\n\n\n\nEstadisticas\n\nBig Data\n\nDatos\n\nBase de datos\n\nHadoop\n\nSpark\n\nCiencia de datos\n\nInternet\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\n2nda Clase\n\n\n\nBig Data\n\nDatos\n\nDimensiones\n\nAnalisis\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n\nDaniel F.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Digital Garden/Sis_Distribuidos/index.html",
+    "href": "Digital Garden/Sis_Distribuidos/index.html",
+    "title": "Sis_Distribuidos",
+    "section": "",
+    "text": "Presentacion\n\n\n\n\"- Ponderacion\"\n\n\n\n\n\n\n\n\n\nMay 1, 2026\n\n\nDaniel F.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Digital Garden/TS_IA_Generativa/1era-clase.html",
+    "href": "Digital Garden/TS_IA_Generativa/1era-clase.html",
+    "title": "1era clase",
+    "section": "",
+    "text": "Aprendizaje humano y de maquina"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mis Materias",
+    "section": "",
+    "text": "Bienvenido a mi Digital Garden. Aquí publico mis apuntes y proyectos."
+  },
+  {
+    "objectID": "index.html#materias",
+    "href": "index.html#materias",
+    "title": "Mis Materias",
+    "section": "Materias",
+    "text": "Materias\n\n\n\n\n\n\n\nHpciii\n\n\n\n\n\n\n\n\n\nSis_Colaborativos\n\n\n\n\n\n\n\n\n\nSis_Distribuidos\n\n\n\n\n\n\n\n\n\nTs_Ia_Generativa\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Digital Garden/TS_IA_Generativa/index.html",
+    "href": "Digital Garden/TS_IA_Generativa/index.html",
+    "title": "Ts_Ia_Generativa",
+    "section": "",
+    "text": "1era clase\n\n\n\n\n\n\n\n\n\n\n\nMay 12, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\n2nda Clase\n\n\n\n\n\n\n\n\n\n\n\nMay 12, 2026\n\n\nDaniel F.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Digital Garden/TS_IA_Generativa/2nda-clase.html",
+    "href": "Digital Garden/TS_IA_Generativa/2nda-clase.html",
+    "title": "2nda Clase",
+    "section": "",
+    "text": "Revision del cuestionario"
+  },
+  {
+    "objectID": "Digital Garden/Sis_Distribuidos/presentacion.html",
+    "href": "Digital Garden/Sis_Distribuidos/presentacion.html",
+    "title": "Presentacion",
+    "section": "",
+    "text": "Enfocarse en comprension y aplicacion de tecnologias y conceptos relacionados con sistemas distribuidos a travez del campo cientifico de la computación en internet\n\n\n\n\nIntroduccion\n\nEvolucion de la computacion en internet\nDefinicion de computacion en internet\nSistemas de informacion distribuidos\nEjemplos de aplicaciones\n\nArquitecturas de sistemas de informacion\n\nDefinicion\nPrincipios\nVistas\nPatrones\n\nDiseño de Arquietecturas de información\n\nDiseño\nCalidad de las arquitecturas\nProcesos de diseño de las arquitecturas de sistemas de información\nArquitecturas de internet\n\nMiddleware y Servicios Web\nComputo en la nube\nFog and Edge Computing\n\n\n\n\n\n\n\n\nConocimiento teórico\n\nPrimer examen\nSegundo examen\n\nConocimiento práctico\nDesempeño\n\n\n\n\nClases impartidas dos veces a la semana durante\nMargen de dos minutos\nExposiciones correctamente presentadas\nEvitar plagio de fuentes utilizadas\nPenalizacion del 10% por cada día de retraso en la entrea de los productos solicitados en las actividades\nDespues del segundo dia de retraso no se aceptaran entregas\nEl correo institucional y Google Classroom es el mecanismo de interaccion entre alumno y profesor\nLas tareas se suben en la plataforma\n\n\n\nEl curso incluye el desarrollo de un prototipo con base en una arquitectura de software de un sistema de informacion basado en patrones arquitecturales y paradigmas de computación\nCada estudiante o equipo definirá un sistema de información."
+  },
+  {
+    "objectID": "Digital Garden/Sis_Distribuidos/presentacion.html#contenido",
+    "href": "Digital Garden/Sis_Distribuidos/presentacion.html#contenido",
+    "title": "Presentacion",
+    "section": "",
+    "text": "Enfocarse en comprension y aplicacion de tecnologias y conceptos relacionados con sistemas distribuidos a travez del campo cientifico de la computación en internet\n\n\n\n\nIntroduccion\n\nEvolucion de la computacion en internet\nDefinicion de computacion en internet\nSistemas de informacion distribuidos\nEjemplos de aplicaciones\n\nArquitecturas de sistemas de informacion\n\nDefinicion\nPrincipios\nVistas\nPatrones\n\nDiseño de Arquietecturas de información\n\nDiseño\nCalidad de las arquitecturas\nProcesos de diseño de las arquitecturas de sistemas de información\nArquitecturas de internet\n\nMiddleware y Servicios Web\nComputo en la nube\nFog and Edge Computing\n\n\n\n\n\n\n\n\nConocimiento teórico\n\nPrimer examen\nSegundo examen\n\nConocimiento práctico\nDesempeño\n\n\n\n\nClases impartidas dos veces a la semana durante\nMargen de dos minutos\nExposiciones correctamente presentadas\nEvitar plagio de fuentes utilizadas\nPenalizacion del 10% por cada día de retraso en la entrea de los productos solicitados en las actividades\nDespues del segundo dia de retraso no se aceptaran entregas\nEl correo institucional y Google Classroom es el mecanismo de interaccion entre alumno y profesor\nLas tareas se suben en la plataforma\n\n\n\nEl curso incluye el desarrollo de un prototipo con base en una arquitectura de software de un sistema de informacion basado en patrones arquitecturales y paradigmas de computación\nCada estudiante o equipo definirá un sistema de información."
   },
   {
     "objectID": "Digital Garden/HPCIII/1era-clase.html",
@@ -47,125 +131,6 @@
     "title": "1era clase",
     "section": "",
     "text": "Dada la naturaleza masiva de estos datos, se requieren entornos que permitan el cómputo paralelo y distribuido:\n\nApache Hadoop: Framework de código abierto diseñado para el almacenamiento (HDFS) y procesamiento (MapReduce) distribuido en clusters de hardware convencional.\nApache Spark: Motor de procesamiento de datos optimizado para trabajar en memoria (RAM), lo que lo hace significativamente más rápido que Hadoop para análisis iterativos y algoritmos complejos.\n\n\n\n\nHealthcare: Telemonitoreo y análisis de interoperabilidad clínica (HL7 FHIR).\nFinanzas: Modelos predictivos para detección de fraude.\nIoT y Sistemas Ciberfísicos: Procesamiento de flujos de datos provenientes de sensores industriales.\nRetail: Personalización masiva basada en comportamiento del usuario.\n\n\nFuentes: Cisco Visual Networking Index, Internet Live Stats, Supercomputing Frontiers and Innovations (2014)."
-  },
-  {
-    "objectID": "Digital Garden/Sis_Distribuidos/presentacion.html",
-    "href": "Digital Garden/Sis_Distribuidos/presentacion.html",
-    "title": "Presentacion",
-    "section": "",
-    "text": "Enfocarse en comprension y aplicacion de tecnologias y conceptos relacionados con sistemas distribuidos a travez del campo cientifico de la computación en internet\n\n\n\n\nIntroduccion\n\nEvolucion de la computacion en internet\nDefinicion de computacion en internet\nSistemas de informacion distribuidos\nEjemplos de aplicaciones\n\nArquitecturas de sistemas de informacion\n\nDefinicion\nPrincipios\nVistas\nPatrones\n\nDiseño de Arquietecturas de información\n\nDiseño\nCalidad de las arquitecturas\nProcesos de diseño de las arquitecturas de sistemas de información\nArquitecturas de internet\n\nMiddleware y Servicios Web\nComputo en la nube\nFog and Edge Computing\n\n\n\n\n\n\n\n\nConocimiento teórico\n\nPrimer examen\nSegundo examen\n\nConocimiento práctico\nDesempeño\n\n\n\n\nClases impartidas dos veces a la semana durante\nMargen de dos minutos\nExposiciones correctamente presentadas\nEvitar plagio de fuentes utilizadas\nPenalizacion del 10% por cada día de retraso en la entrea de los productos solicitados en las actividades\nDespues del segundo dia de retraso no se aceptaran entregas\nEl correo institucional y Google Classroom es el mecanismo de interaccion entre alumno y profesor\nLas tareas se suben en la plataforma\n\n\n\nEl curso incluye el desarrollo de un prototipo con base en una arquitectura de software de un sistema de informacion basado en patrones arquitecturales y paradigmas de computación\nCada estudiante o equipo definirá un sistema de información."
-  },
-  {
-    "objectID": "Digital Garden/Sis_Distribuidos/presentacion.html#contenido",
-    "href": "Digital Garden/Sis_Distribuidos/presentacion.html#contenido",
-    "title": "Presentacion",
-    "section": "",
-    "text": "Enfocarse en comprension y aplicacion de tecnologias y conceptos relacionados con sistemas distribuidos a travez del campo cientifico de la computación en internet\n\n\n\n\nIntroduccion\n\nEvolucion de la computacion en internet\nDefinicion de computacion en internet\nSistemas de informacion distribuidos\nEjemplos de aplicaciones\n\nArquitecturas de sistemas de informacion\n\nDefinicion\nPrincipios\nVistas\nPatrones\n\nDiseño de Arquietecturas de información\n\nDiseño\nCalidad de las arquitecturas\nProcesos de diseño de las arquitecturas de sistemas de información\nArquitecturas de internet\n\nMiddleware y Servicios Web\nComputo en la nube\nFog and Edge Computing\n\n\n\n\n\n\n\n\nConocimiento teórico\n\nPrimer examen\nSegundo examen\n\nConocimiento práctico\nDesempeño\n\n\n\n\nClases impartidas dos veces a la semana durante\nMargen de dos minutos\nExposiciones correctamente presentadas\nEvitar plagio de fuentes utilizadas\nPenalizacion del 10% por cada día de retraso en la entrea de los productos solicitados en las actividades\nDespues del segundo dia de retraso no se aceptaran entregas\nEl correo institucional y Google Classroom es el mecanismo de interaccion entre alumno y profesor\nLas tareas se suben en la plataforma\n\n\n\nEl curso incluye el desarrollo de un prototipo con base en una arquitectura de software de un sistema de informacion basado en patrones arquitecturales y paradigmas de computación\nCada estudiante o equipo definirá un sistema de información."
-  },
-  {
-    "objectID": "Digital Garden/Sis_Distribuidos/sin-t-tulo.html",
-    "href": "Digital Garden/Sis_Distribuidos/sin-t-tulo.html",
-    "title": "Sin título",
-    "section": "",
-    "text": "Sin título"
-  },
-  {
-    "objectID": "Digital Garden/TS_IA_Generativa/machine-learning-p1.html",
-    "href": "Digital Garden/TS_IA_Generativa/machine-learning-p1.html",
-    "title": "Machine Learning: P1",
-    "section": "",
-    "text": "Son valores numericos individuales que son tomados normalmente directamente de un atributo real.\n\n\n\nSon arrelos de valores numericos."
-  },
-  {
-    "objectID": "Digital Garden/TS_IA_Generativa/machine-learning-p1.html#estructuras-fundamentales",
-    "href": "Digital Garden/TS_IA_Generativa/machine-learning-p1.html#estructuras-fundamentales",
-    "title": "Machine Learning: P1",
-    "section": "",
-    "text": "Son valores numericos individuales que son tomados normalmente directamente de un atributo real.\n\n\n\nSon arrelos de valores numericos."
-  },
-  {
-    "objectID": "Digital Garden/TS_IA_Generativa/index.html",
-    "href": "Digital Garden/TS_IA_Generativa/index.html",
-    "title": "Ts_Ia_Generativa",
-    "section": "",
-    "text": "1era clase\n\n\n\n\n\n\n\n\n\n\n\nMay 12, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\n2nda Clase\n\n\n\n\n\n\n\n\n\n\n\nMay 12, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\nlntro\n\n\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning: P1\n\n\n\nAlgebra lineal\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n\nDaniel F.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mis Materias",
-    "section": "",
-    "text": "Bienvenido a mi Digital Garden. Aquí publico mis apuntes y proyectos."
-  },
-  {
-    "objectID": "index.html#materias",
-    "href": "index.html#materias",
-    "title": "Mis Materias",
-    "section": "Materias",
-    "text": "Materias\n\n\n\n\n\n\n\nHpciii\n\n\n\n\n\n\n\n\n\nSis_Colaborativos\n\n\n\n\n\n\n\n\n\nSis_Distribuidos\n\n\n\n\n\n\n\n\n\nTs_Ia_Generativa\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "Digital Garden/TS_IA_Generativa/lntro.html",
-    "href": "Digital Garden/TS_IA_Generativa/lntro.html",
-    "title": "lntro",
-    "section": "",
-    "text": "Intro"
-  },
-  {
-    "objectID": "Digital Garden/TS_IA_Generativa/1era-clase.html",
-    "href": "Digital Garden/TS_IA_Generativa/1era-clase.html",
-    "title": "1era clase",
-    "section": "",
-    "text": "Aprendizaje humano y de maquina"
-  },
-  {
-    "objectID": "Digital Garden/TS_IA_Generativa/2nda-clase.html",
-    "href": "Digital Garden/TS_IA_Generativa/2nda-clase.html",
-    "title": "2nda Clase",
-    "section": "",
-    "text": "Revision del cuestionario"
-  },
-  {
-    "objectID": "Digital Garden/Sis_Distribuidos/index.html",
-    "href": "Digital Garden/Sis_Distribuidos/index.html",
-    "title": "Sis_Distribuidos",
-    "section": "",
-    "text": "Presentacion\n\n\n\n\"- Ponderacion\"\n\n\n\n\n\n\n\n\n\nMay 1, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\nSin título\n\n\n\n\"- Ponderacion\"\n\n\n\n\n\n\n\n\n\nMay 1, 2026\n\n\nDaniel F.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "Digital Garden/HPCIII/index.html",
-    "href": "Digital Garden/HPCIII/index.html",
-    "title": "Hpciii",
-    "section": "",
-    "text": "1era clase\n\n\n\nEstadisticas\n\nBig Data\n\nDatos\n\nBase de datos\n\nHadoop\n\nSpark\n\nCiencia de datos\n\nInternet\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\n2nda Clase\n\n\n\nBig Data\n\nDatos\n\nDimensiones\n\nAnalisis\n\n\n\n\n\n\n\n\n\nMay 2, 2026\n\n\nDaniel F.\n\n\n\n\n\n\n\n\n\n\n\n\nlntroduccion\n\n\n\nPonderacion\n\n\n\n\n\n\n\n\n\nApr 29, 2026\n\n\nDaniel F.\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "Digital Garden/HPCIII/2nda-clase.html",
-    "href": "Digital Garden/HPCIII/2nda-clase.html",
-    "title": "2nda Clase",
-    "section": "",
-    "text": "Para determinar si se requieren herramientas especializadas, se evalúan las siguientes dimensiones:\n\nVolumen: Se refiere a una cantidad de datos tan grande que resulta difícil de almacenar, procesar y analizar en una sola máquina.\nVelocidad: Es la rapidez con la que se generan los datos, siendo la razón principal de su crecimiento exponencial. Esta acumulación masiva en cortos periodos de tiempo obliga a que ciertas aplicaciones con plazos estrictos analicen la información en tiempo real.\nVariedad: Implica recolectar datos de múltiples fuentes y en diversos formatos, ya sean estructurados, semi-estructurados o no estructurados (como texto, imágenes, audio, video y datos de sensores).\nVeracidad: Hace referencia a la precisión de la información. Es crucial limpiar los datos para filtrar registros incorrectos o defectuosos y así eliminar el “ruido”.\nValor: Es la utilidad de los datos para un propósito específico. Extraer este valor es el objetivo final de cualquier sistema de analítica de Big Data.\n\n\n\n\n\nEl análisis a esta escala requiere arquitecturas de procesamiento paralelo y distribuido que aprovechan los recursos de cómputo y almacenamiento de grandes clusters de máquinas. Este ecosistema es posible gracias a tecnologías como:\n\nComputación en la nube (Cloud computing).\nFrameworks de procesamiento distribuido y paralelo.\nBases de datos no relacionales.\nComputación en memoria (In-memory computing).\n\n\n\n\n\nEl ciclo de vida de los datos implica varias etapas secuenciales para transformar información cruda en conocimiento útil:\n\n\n\nAntes del análisis, la información debe ser capturada desde las fuentes crudas (raw data sources) hacia los sistemas de Big Data.\nLa elección de herramientas depende completamente de la fuente y el tipo de dato que se está ingiriendo.\n\n\n\n\n\nPor lo general, los datos crudos están “sucios” y presentan errores como registros corruptos, valores faltantes, duplicados, inconsistencias en unidades o abreviaturas, errores tipográficos y mal formato.\nLimpieza (Data Cleansing): Detecta y resuelve los registros corruptos, faltantes o con mal formato.\nWrangling / Munging: Transforma los datos de un formato crudo a otro, por ejemplo, homogeneizando si un archivo usa comas o tabuladores como separador.\nNormalización: Se aplica cuando la información de distintas fuentes utiliza diferentes escalas, unidades o abreviaturas para lo mismo.\nFiltrado y Muestreo: Útiles para procesar únicamente los datos que cumplen con ciertas reglas.\nTambién se realizan tareas de de-duplicación.\n\n\n\n\n\nDependiendo de los requerimientos, el análisis puede procesarse por lotes (batch) o en tiempo real.\nSe ejecutan diferentes tipos de analítica para extraer valor: descriptiva, diagnóstica, predictiva y prescriptiva.\n\n\n\n\n\nLa elección de bases de datos, herramientas de visualización y frameworks web depende de las necesidades de la aplicación.\nEstáticas: Utilizadas cuando los resultados ya están almacenados y solo se necesita mostrarlos.\nDinámicas: Requeridas si la aplicación necesita que los resultados se actualicen con regularidad.\nInteractivas: Necesarias cuando la aplicación debe aceptar entradas (inputs) del usuario para desplegar los resultados."
-  },
-  {
-    "objectID": "Digital Garden/HPCIII/2nda-clase.html#características-del-big-data-las-5-v",
-    "href": "Digital Garden/HPCIII/2nda-clase.html#características-del-big-data-las-5-v",
-    "title": "2nda Clase",
-    "section": "",
-    "text": "Para determinar si se requieren herramientas especializadas, se evalúan las siguientes dimensiones:\n\nVolumen: Se refiere a una cantidad de datos tan grande que resulta difícil de almacenar, procesar y analizar en una sola máquina.\nVelocidad: Es la rapidez con la que se generan los datos, siendo la razón principal de su crecimiento exponencial. Esta acumulación masiva en cortos periodos de tiempo obliga a que ciertas aplicaciones con plazos estrictos analicen la información en tiempo real.\nVariedad: Implica recolectar datos de múltiples fuentes y en diversos formatos, ya sean estructurados, semi-estructurados o no estructurados (como texto, imágenes, audio, video y datos de sensores).\nVeracidad: Hace referencia a la precisión de la información. Es crucial limpiar los datos para filtrar registros incorrectos o defectuosos y así eliminar el “ruido”.\nValor: Es la utilidad de los datos para un propósito específico. Extraer este valor es el objetivo final de cualquier sistema de analítica de Big Data."
-  },
-  {
-    "objectID": "Digital Garden/HPCIII/2nda-clase.html#tecnologías-habilitadoras",
-    "href": "Digital Garden/HPCIII/2nda-clase.html#tecnologías-habilitadoras",
-    "title": "2nda Clase",
-    "section": "",
-    "text": "El análisis a esta escala requiere arquitecturas de procesamiento paralelo y distribuido que aprovechan los recursos de cómputo y almacenamiento de grandes clusters de máquinas. Este ecosistema es posible gracias a tecnologías como:\n\nComputación en la nube (Cloud computing).\nFrameworks de procesamiento distribuido y paralelo.\nBases de datos no relacionales.\nComputación en memoria (In-memory computing)."
-  },
-  {
-    "objectID": "Digital Garden/HPCIII/2nda-clase.html#el-pipeline-de-análisis-de-datos",
-    "href": "Digital Garden/HPCIII/2nda-clase.html#el-pipeline-de-análisis-de-datos",
-    "title": "2nda Clase",
-    "section": "",
-    "text": "El ciclo de vida de los datos implica varias etapas secuenciales para transformar información cruda en conocimiento útil:\n\n\n\nAntes del análisis, la información debe ser capturada desde las fuentes crudas (raw data sources) hacia los sistemas de Big Data.\nLa elección de herramientas depende completamente de la fuente y el tipo de dato que se está ingiriendo.\n\n\n\n\n\nPor lo general, los datos crudos están “sucios” y presentan errores como registros corruptos, valores faltantes, duplicados, inconsistencias en unidades o abreviaturas, errores tipográficos y mal formato.\nLimpieza (Data Cleansing): Detecta y resuelve los registros corruptos, faltantes o con mal formato.\nWrangling / Munging: Transforma los datos de un formato crudo a otro, por ejemplo, homogeneizando si un archivo usa comas o tabuladores como separador.\nNormalización: Se aplica cuando la información de distintas fuentes utiliza diferentes escalas, unidades o abreviaturas para lo mismo.\nFiltrado y Muestreo: Útiles para procesar únicamente los datos que cumplen con ciertas reglas.\nTambién se realizan tareas de de-duplicación.\n\n\n\n\n\nDependiendo de los requerimientos, el análisis puede procesarse por lotes (batch) o en tiempo real.\nSe ejecutan diferentes tipos de analítica para extraer valor: descriptiva, diagnóstica, predictiva y prescriptiva.\n\n\n\n\n\nLa elección de bases de datos, herramientas de visualización y frameworks web depende de las necesidades de la aplicación.\nEstáticas: Utilizadas cuando los resultados ya están almacenados y solo se necesita mostrarlos.\nDinámicas: Requeridas si la aplicación necesita que los resultados se actualicen con regularidad.\nInteractivas: Necesarias cuando la aplicación debe aceptar entradas (inputs) del usuario para desplegar los resultados."
   },
   {
     "objectID": "Digital Garden/Sis_Colaborativos/sin-t-tulo.html",
