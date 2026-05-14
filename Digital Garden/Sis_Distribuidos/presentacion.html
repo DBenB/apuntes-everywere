@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Daniel F.">
-<meta name="dcterms.date" content="2026-05-02">
+<meta name="dcterms.date" content="2026-05-01">
 
-<title>2nda Clase – Mi Cerebro Digital</title>
+<title>Presentacion – Mi Cerebro Digital</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -130,16 +130,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#arquitectura-y-ciclo-de-vida-del-big-data" id="toc-arquitectura-y-ciclo-de-vida-del-big-data" class="nav-link active" data-scroll-target="#arquitectura-y-ciclo-de-vida-del-big-data">Arquitectura y Ciclo de Vida del Big Data</a>
+  <li><a href="#topicos-selectos-de-sistemas-distribuidos-computación-en-internet" id="toc-topicos-selectos-de-sistemas-distribuidos-computación-en-internet" class="nav-link active" data-scroll-target="#topicos-selectos-de-sistemas-distribuidos-computación-en-internet">Topicos Selectos de Sistemas Distribuidos: Computación en internet</a>
   <ul class="collapse">
-  <li><a href="#características-del-big-data-las-5-v" id="toc-características-del-big-data-las-5-v" class="nav-link" data-scroll-target="#características-del-big-data-las-5-v">1. Características del Big Data (Las 5 “V”)</a></li>
-  <li><a href="#tecnologías-habilitadoras" id="toc-tecnologías-habilitadoras" class="nav-link" data-scroll-target="#tecnologías-habilitadoras">2. Tecnologías Habilitadoras</a></li>
-  <li><a href="#el-pipeline-de-análisis-de-datos" id="toc-el-pipeline-de-análisis-de-datos" class="nav-link" data-scroll-target="#el-pipeline-de-análisis-de-datos">3. El Pipeline de Análisis de Datos</a>
+  <li><a href="#contenido" id="toc-contenido" class="nav-link" data-scroll-target="#contenido">Contenido</a>
   <ul class="collapse">
-  <li><a href="#a.-recolección-ingesta" id="toc-a.-recolección-ingesta" class="nav-link" data-scroll-target="#a.-recolección-ingesta">A. Recolección (Ingesta)</a></li>
-  <li><a href="#b.-preparación-de-los-datos" id="toc-b.-preparación-de-los-datos" class="nav-link" data-scroll-target="#b.-preparación-de-los-datos">B. Preparación de los Datos</a></li>
-  <li><a href="#c.-análisis" id="toc-c.-análisis" class="nav-link" data-scroll-target="#c.-análisis">C. Análisis</a></li>
-  <li><a href="#d.-visualización" id="toc-d.-visualización" class="nav-link" data-scroll-target="#d.-visualización">D. Visualización</a></li>
+  <li><a href="#objetivos-de-curso" id="toc-objetivos-de-curso" class="nav-link" data-scroll-target="#objetivos-de-curso">Objetivos de curso</a></li>
+  <li><a href="#temario-del-curso" id="toc-temario-del-curso" class="nav-link" data-scroll-target="#temario-del-curso">Temario del curso</a></li>
+  <li><a href="#dinamica-del-curso" id="toc-dinamica-del-curso" class="nav-link" data-scroll-target="#dinamica-del-curso">Dinamica del curso</a></li>
+  <li><a href="#criterios-de-evaluación" id="toc-criterios-de-evaluación" class="nav-link" data-scroll-target="#criterios-de-evaluación">Criterios de evaluación</a></li>
+  <li><a href="#disposiciones-generales" id="toc-disposiciones-generales" class="nav-link" data-scroll-target="#disposiciones-generales">Disposiciones generales</a></li>
+  <li><a href="#caso-de-estudio" id="toc-caso-de-estudio" class="nav-link" data-scroll-target="#caso-de-estudio">Caso de estudio</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -150,12 +150,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">2nda Clase</h1>
+<h1 class="title">Presentacion</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Big Data</div>
-    <div class="quarto-category">Datos</div>
-    <div class="quarto-category">Dimensiones</div>
-    <div class="quarto-category">Analisis</div>
+    <div class="quarto-category">"- Ponderacion"</div>
   </div>
   </div>
 
@@ -173,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 2, 2026</p>
+      <p class="date">May 1, 2026</p>
     </div>
   </div>
   
@@ -185,68 +182,74 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arquitectura-y-ciclo-de-vida-del-big-data" class="level1">
-<h1>Arquitectura y Ciclo de Vida del Big Data</h1>
-<section id="características-del-big-data-las-5-v" class="level2">
-<h2 class="anchored" data-anchor-id="características-del-big-data-las-5-v">1. Características del Big Data (Las 5 “V”)</h2>
-<p>Para determinar si se requieren herramientas especializadas, se evalúan las siguientes dimensiones:</p>
-<ul>
-<li><strong>Volumen:</strong> Se refiere a una cantidad de datos tan grande que resulta difícil de almacenar, procesar y analizar en una sola máquina.</li>
-<li><strong>Velocidad:</strong> Es la rapidez con la que se generan los datos, siendo la razón principal de su crecimiento exponencial. Esta acumulación masiva en cortos periodos de tiempo obliga a que ciertas aplicaciones con plazos estrictos analicen la información en tiempo real.</li>
-<li><strong>Variedad:</strong> Implica recolectar datos de múltiples fuentes y en diversos formatos, ya sean estructurados, semi-estructurados o no estructurados (como texto, imágenes, audio, video y datos de sensores).</li>
-<li><strong>Veracidad:</strong> Hace referencia a la precisión de la información. Es crucial limpiar los datos para filtrar registros incorrectos o defectuosos y así eliminar el “ruido”.</li>
-<li><strong>Valor:</strong> Es la utilidad de los datos para un propósito específico. Extraer este valor es el objetivo final de cualquier sistema de analítica de Big Data.</li>
-</ul>
-<hr>
+<section id="topicos-selectos-de-sistemas-distribuidos-computación-en-internet" class="level1">
+<h1>Topicos Selectos de Sistemas Distribuidos: Computación en internet</h1>
+<section id="contenido" class="level2">
+<h2 class="anchored" data-anchor-id="contenido">Contenido</h2>
+<section id="objetivos-de-curso" class="level3">
+<h3 class="anchored" data-anchor-id="objetivos-de-curso">Objetivos de curso</h3>
+<p>Enfocarse en comprension y aplicacion de tecnologias y conceptos relacionados con sistemas distribuidos a travez del campo cientifico de la computación en internet</p>
 </section>
-<section id="tecnologías-habilitadoras" class="level2">
-<h2 class="anchored" data-anchor-id="tecnologías-habilitadoras">2. Tecnologías Habilitadoras</h2>
-<p>El análisis a esta escala requiere arquitecturas de procesamiento paralelo y distribuido que aprovechan los recursos de cómputo y almacenamiento de grandes clusters de máquinas. Este ecosistema es posible gracias a tecnologías como:</p>
+<section id="temario-del-curso" class="level3">
+<h3 class="anchored" data-anchor-id="temario-del-curso">Temario del curso</h3>
 <ul>
-<li>Computación en la nube (Cloud computing).</li>
-<li>Frameworks de procesamiento distribuido y paralelo.</li>
-<li>Bases de datos no relacionales.</li>
-<li>Computación en memoria (In-memory computing).</li>
-</ul>
-<hr>
-</section>
-<section id="el-pipeline-de-análisis-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="el-pipeline-de-análisis-de-datos">3. El Pipeline de Análisis de Datos</h2>
-<p>El ciclo de vida de los datos implica varias etapas secuenciales para transformar información cruda en conocimiento útil:</p>
-<section id="a.-recolección-ingesta" class="level3">
-<h3 class="anchored" data-anchor-id="a.-recolección-ingesta">A. Recolección (Ingesta)</h3>
+<li>Introduccion
 <ul>
-<li>Antes del análisis, la información debe ser capturada desde las fuentes crudas (raw data sources) hacia los sistemas de Big Data.</li>
-<li>La elección de herramientas depende completamente de la fuente y el tipo de dato que se está ingiriendo.</li>
-</ul>
-</section>
-<section id="b.-preparación-de-los-datos" class="level3">
-<h3 class="anchored" data-anchor-id="b.-preparación-de-los-datos">B. Preparación de los Datos</h3>
+<li>Evolucion de la computacion en internet</li>
+<li>Definicion de computacion en internet</li>
+<li>Sistemas de informacion distribuidos</li>
+<li>Ejemplos de aplicaciones</li>
+</ul></li>
+<li>Arquitecturas de sistemas de informacion
 <ul>
-<li>Por lo general, los datos crudos están “sucios” y presentan errores como registros corruptos, valores faltantes, duplicados, inconsistencias en unidades o abreviaturas, errores tipográficos y mal formato.</li>
-<li><strong>Limpieza (Data Cleansing):</strong> Detecta y resuelve los registros corruptos, faltantes o con mal formato.</li>
-<li><strong>Wrangling / Munging:</strong> Transforma los datos de un formato crudo a otro, por ejemplo, homogeneizando si un archivo usa comas o tabuladores como separador.</li>
-<li><strong>Normalización:</strong> Se aplica cuando la información de distintas fuentes utiliza diferentes escalas, unidades o abreviaturas para lo mismo.</li>
-<li><strong>Filtrado y Muestreo:</strong> Útiles para procesar únicamente los datos que cumplen con ciertas reglas.</li>
-<li>También se realizan tareas de de-duplicación.</li>
+<li>Definicion</li>
+<li>Principios</li>
+<li>Vistas</li>
+<li>Patrones</li>
+</ul></li>
+<li>Diseño de Arquietecturas de información
+<ul>
+<li>Diseño</li>
+<li>Calidad de las arquitecturas</li>
+<li>Procesos de diseño de las arquitecturas de sistemas de información</li>
+<li>Arquitecturas de internet</li>
+</ul></li>
+<li>Middleware y Servicios Web</li>
+<li>Computo en la nube</li>
+<li>Fog and Edge Computing</li>
 </ul>
 </section>
-<section id="c.-análisis" class="level3">
-<h3 class="anchored" data-anchor-id="c.-análisis">C. Análisis</h3>
+<section id="dinamica-del-curso" class="level3">
+<h3 class="anchored" data-anchor-id="dinamica-del-curso">Dinamica del curso</h3>
+</section>
+<section id="criterios-de-evaluación" class="level3">
+<h3 class="anchored" data-anchor-id="criterios-de-evaluación">Criterios de evaluación</h3>
 <ul>
-<li>Dependiendo de los requerimientos, el análisis puede procesarse por lotes (batch) o en tiempo real.</li>
-<li>Se ejecutan diferentes tipos de analítica para extraer valor: descriptiva, diagnóstica, predictiva y prescriptiva.</li>
+<li>Conocimiento teórico
+<ul>
+<li>Primer examen</li>
+<li>Segundo examen</li>
+</ul></li>
+<li>Conocimiento práctico</li>
+<li>Desempeño</li>
 </ul>
 </section>
-<section id="d.-visualización" class="level3">
-<h3 class="anchored" data-anchor-id="d.-visualización">D. Visualización</h3>
-<ul>
-<li>La elección de bases de datos, herramientas de visualización y frameworks web depende de las necesidades de la aplicación.</li>
-<li><strong>Estáticas:</strong> Utilizadas cuando los resultados ya están almacenados y solo se necesita mostrarlos.</li>
-<li><strong>Dinámicas:</strong> Requeridas si la aplicación necesita que los resultados se actualicen con regularidad.</li>
-<li><strong>Interactivas:</strong> Necesarias cuando la aplicación debe aceptar entradas (inputs) del usuario para desplegar los resultados. <img src="IMG_20260512_121638.jpg" class="img-fluid"><img src="IMG_20260512_124128.jpg" class="img-fluid"><img src="IMG_20260512_125534.jpg" class="img-fluid"><img src="IMG_20260512_130130.jpg" class="img-fluid"><img src="IMG_20260512_132403.jpg" class="img-fluid"><img src="IMG_20260512_133456.jpg" class="img-fluid"><img src="IMG_20260512_134951.jpg" class="img-fluid"></li>
-</ul>
-<!-- obsidian-sync:{"source":"HPCIII/2nda Clase.md","hash":"8f5ae8abc3dc29be3051bfd338b433cb75b9b8d162e3f2edab986df353e12c96"} -->
+<section id="disposiciones-generales" class="level3">
+<h3 class="anchored" data-anchor-id="disposiciones-generales">Disposiciones generales</h3>
+<p>Clases impartidas dos veces a la semana durante</p>
+<p>Margen de dos minutos</p>
+<p>Exposiciones correctamente presentadas</p>
+<p>Evitar plagio de fuentes utilizadas</p>
+<p>Penalizacion del 10% por cada día de retraso en la entrea de los productos solicitados en las actividades</p>
+<p>Despues del segundo dia de retraso no se aceptaran entregas</p>
+<p>El correo institucional y Google Classroom es el mecanismo de interaccion entre alumno y profesor</p>
+<p>Las tareas se suben en la plataforma</p>
+</section>
+<section id="caso-de-estudio" class="level3">
+<h3 class="anchored" data-anchor-id="caso-de-estudio">Caso de estudio</h3>
+<p>El curso incluye el desarrollo de un prototipo con base en una arquitectura de software de un sistema de informacion basado en patrones arquitecturales y paradigmas de computación</p>
+<p>Cada estudiante o equipo definirá un sistema de información.</p>
+<!-- obsidian-sync:{"source":"Sis_Distribuidos/1era clase.md","hash":"0b945a60a520919b36fa0e46314d247bb49755eaa349a98d9bd8625433336575"} -->
 
 
 </section>

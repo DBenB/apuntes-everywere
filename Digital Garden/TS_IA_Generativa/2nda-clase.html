@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Daniel F.">
-<meta name="dcterms.date" content="2026-05-02">
+<meta name="dcterms.date" content="2026-05-12">
 
 <title>2nda Clase – Mi Cerebro Digital</title>
 <style>
@@ -130,18 +130,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#arquitectura-y-ciclo-de-vida-del-big-data" id="toc-arquitectura-y-ciclo-de-vida-del-big-data" class="nav-link active" data-scroll-target="#arquitectura-y-ciclo-de-vida-del-big-data">Arquitectura y Ciclo de Vida del Big Data</a>
-  <ul class="collapse">
-  <li><a href="#características-del-big-data-las-5-v" id="toc-características-del-big-data-las-5-v" class="nav-link" data-scroll-target="#características-del-big-data-las-5-v">1. Características del Big Data (Las 5 “V”)</a></li>
-  <li><a href="#tecnologías-habilitadoras" id="toc-tecnologías-habilitadoras" class="nav-link" data-scroll-target="#tecnologías-habilitadoras">2. Tecnologías Habilitadoras</a></li>
-  <li><a href="#el-pipeline-de-análisis-de-datos" id="toc-el-pipeline-de-análisis-de-datos" class="nav-link" data-scroll-target="#el-pipeline-de-análisis-de-datos">3. El Pipeline de Análisis de Datos</a>
-  <ul class="collapse">
-  <li><a href="#a.-recolección-ingesta" id="toc-a.-recolección-ingesta" class="nav-link" data-scroll-target="#a.-recolección-ingesta">A. Recolección (Ingesta)</a></li>
-  <li><a href="#b.-preparación-de-los-datos" id="toc-b.-preparación-de-los-datos" class="nav-link" data-scroll-target="#b.-preparación-de-los-datos">B. Preparación de los Datos</a></li>
-  <li><a href="#c.-análisis" id="toc-c.-análisis" class="nav-link" data-scroll-target="#c.-análisis">C. Análisis</a></li>
-  <li><a href="#d.-visualización" id="toc-d.-visualización" class="nav-link" data-scroll-target="#d.-visualización">D. Visualización</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#revision-del-cuestionario" id="toc-revision-del-cuestionario" class="nav-link active" data-scroll-target="#revision-del-cuestionario">Revision del cuestionario</a></li>
   </ul>
 </nav>
     </div>
@@ -151,13 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">2nda Clase</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Big Data</div>
-    <div class="quarto-category">Datos</div>
-    <div class="quarto-category">Dimensiones</div>
-    <div class="quarto-category">Analisis</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -173,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 2, 2026</p>
+      <p class="date">May 12, 2026</p>
     </div>
   </div>
   
@@ -185,72 +168,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="arquitectura-y-ciclo-de-vida-del-big-data" class="level1">
-<h1>Arquitectura y Ciclo de Vida del Big Data</h1>
-<section id="características-del-big-data-las-5-v" class="level2">
-<h2 class="anchored" data-anchor-id="características-del-big-data-las-5-v">1. Características del Big Data (Las 5 “V”)</h2>
-<p>Para determinar si se requieren herramientas especializadas, se evalúan las siguientes dimensiones:</p>
-<ul>
-<li><strong>Volumen:</strong> Se refiere a una cantidad de datos tan grande que resulta difícil de almacenar, procesar y analizar en una sola máquina.</li>
-<li><strong>Velocidad:</strong> Es la rapidez con la que se generan los datos, siendo la razón principal de su crecimiento exponencial. Esta acumulación masiva en cortos periodos de tiempo obliga a que ciertas aplicaciones con plazos estrictos analicen la información en tiempo real.</li>
-<li><strong>Variedad:</strong> Implica recolectar datos de múltiples fuentes y en diversos formatos, ya sean estructurados, semi-estructurados o no estructurados (como texto, imágenes, audio, video y datos de sensores).</li>
-<li><strong>Veracidad:</strong> Hace referencia a la precisión de la información. Es crucial limpiar los datos para filtrar registros incorrectos o defectuosos y así eliminar el “ruido”.</li>
-<li><strong>Valor:</strong> Es la utilidad de los datos para un propósito específico. Extraer este valor es el objetivo final de cualquier sistema de analítica de Big Data.</li>
-</ul>
-<hr>
-</section>
-<section id="tecnologías-habilitadoras" class="level2">
-<h2 class="anchored" data-anchor-id="tecnologías-habilitadoras">2. Tecnologías Habilitadoras</h2>
-<p>El análisis a esta escala requiere arquitecturas de procesamiento paralelo y distribuido que aprovechan los recursos de cómputo y almacenamiento de grandes clusters de máquinas. Este ecosistema es posible gracias a tecnologías como:</p>
-<ul>
-<li>Computación en la nube (Cloud computing).</li>
-<li>Frameworks de procesamiento distribuido y paralelo.</li>
-<li>Bases de datos no relacionales.</li>
-<li>Computación en memoria (In-memory computing).</li>
-</ul>
-<hr>
-</section>
-<section id="el-pipeline-de-análisis-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="el-pipeline-de-análisis-de-datos">3. El Pipeline de Análisis de Datos</h2>
-<p>El ciclo de vida de los datos implica varias etapas secuenciales para transformar información cruda en conocimiento útil:</p>
-<section id="a.-recolección-ingesta" class="level3">
-<h3 class="anchored" data-anchor-id="a.-recolección-ingesta">A. Recolección (Ingesta)</h3>
-<ul>
-<li>Antes del análisis, la información debe ser capturada desde las fuentes crudas (raw data sources) hacia los sistemas de Big Data.</li>
-<li>La elección de herramientas depende completamente de la fuente y el tipo de dato que se está ingiriendo.</li>
-</ul>
-</section>
-<section id="b.-preparación-de-los-datos" class="level3">
-<h3 class="anchored" data-anchor-id="b.-preparación-de-los-datos">B. Preparación de los Datos</h3>
-<ul>
-<li>Por lo general, los datos crudos están “sucios” y presentan errores como registros corruptos, valores faltantes, duplicados, inconsistencias en unidades o abreviaturas, errores tipográficos y mal formato.</li>
-<li><strong>Limpieza (Data Cleansing):</strong> Detecta y resuelve los registros corruptos, faltantes o con mal formato.</li>
-<li><strong>Wrangling / Munging:</strong> Transforma los datos de un formato crudo a otro, por ejemplo, homogeneizando si un archivo usa comas o tabuladores como separador.</li>
-<li><strong>Normalización:</strong> Se aplica cuando la información de distintas fuentes utiliza diferentes escalas, unidades o abreviaturas para lo mismo.</li>
-<li><strong>Filtrado y Muestreo:</strong> Útiles para procesar únicamente los datos que cumplen con ciertas reglas.</li>
-<li>También se realizan tareas de de-duplicación.</li>
-</ul>
-</section>
-<section id="c.-análisis" class="level3">
-<h3 class="anchored" data-anchor-id="c.-análisis">C. Análisis</h3>
-<ul>
-<li>Dependiendo de los requerimientos, el análisis puede procesarse por lotes (batch) o en tiempo real.</li>
-<li>Se ejecutan diferentes tipos de analítica para extraer valor: descriptiva, diagnóstica, predictiva y prescriptiva.</li>
-</ul>
-</section>
-<section id="d.-visualización" class="level3">
-<h3 class="anchored" data-anchor-id="d.-visualización">D. Visualización</h3>
-<ul>
-<li>La elección de bases de datos, herramientas de visualización y frameworks web depende de las necesidades de la aplicación.</li>
-<li><strong>Estáticas:</strong> Utilizadas cuando los resultados ya están almacenados y solo se necesita mostrarlos.</li>
-<li><strong>Dinámicas:</strong> Requeridas si la aplicación necesita que los resultados se actualicen con regularidad.</li>
-<li><strong>Interactivas:</strong> Necesarias cuando la aplicación debe aceptar entradas (inputs) del usuario para desplegar los resultados. <img src="IMG_20260512_121638.jpg" class="img-fluid"><img src="IMG_20260512_124128.jpg" class="img-fluid"><img src="IMG_20260512_125534.jpg" class="img-fluid"><img src="IMG_20260512_130130.jpg" class="img-fluid"><img src="IMG_20260512_132403.jpg" class="img-fluid"><img src="IMG_20260512_133456.jpg" class="img-fluid"><img src="IMG_20260512_134951.jpg" class="img-fluid"></li>
-</ul>
-<!-- obsidian-sync:{"source":"HPCIII/2nda Clase.md","hash":"8f5ae8abc3dc29be3051bfd338b433cb75b9b8d162e3f2edab986df353e12c96"} -->
+<section id="revision-del-cuestionario" class="level1">
+<h1>Revision del cuestionario</h1>
+<!-- obsidian-sync:{"source":"TS_IA_Generativa/2nda clase.md","hash":"efef60932b103e1fa1e94a0ba9cef35707c6518c5117a02db030ed94c5b096e4"} -->
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

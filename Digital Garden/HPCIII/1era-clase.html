@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -130,7 +159,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#titulo-1era-clase" id="toc-titulo-1era-clase" class="nav-link active" data-scroll-target="#titulo-1era-clase">Titulo 1era clase</a></li>
+  <li><a href="#datos-en-internet-almacenamiento-tráfico-y-big-data" id="toc-datos-en-internet-almacenamiento-tráfico-y-big-data" class="nav-link active" data-scroll-target="#datos-en-internet-almacenamiento-tráfico-y-big-data">Datos en Internet: Almacenamiento, Tráfico y Big Data</a>
+  <ul class="collapse">
+  <li><a href="#el-internet-en-tiempo-real" id="toc-el-internet-en-tiempo-real" class="nav-link" data-scroll-target="#el-internet-en-tiempo-real">1. El Internet en Tiempo Real</a>
+  <ul class="collapse">
+  <li><a href="#crecimiento-y-escala-de-la-web" id="toc-crecimiento-y-escala-de-la-web" class="nav-link" data-scroll-target="#crecimiento-y-escala-de-la-web">Crecimiento y Escala de la Web</a></li>
+  </ul></li>
+  <li><a href="#la-era-del-zettabyte" id="toc-la-era-del-zettabyte" class="nav-link" data-scroll-target="#la-era-del-zettabyte">2. La Era del Zettabyte</a>
+  <ul class="collapse">
+  <li><a href="#jerarquía-de-unidades" id="toc-jerarquía-de-unidades" class="nav-link" data-scroll-target="#jerarquía-de-unidades">Jerarquía de Unidades</a></li>
+  <li><a href="#proyecciones-de-datos" id="toc-proyecciones-de-datos" class="nav-link" data-scroll-target="#proyecciones-de-datos">Proyecciones de Datos</a></li>
+  </ul></li>
+  <li><a href="#fundamentos-de-big-data" id="toc-fundamentos-de-big-data" class="nav-link" data-scroll-target="#fundamentos-de-big-data">3. Fundamentos de Big Data</a>
+  <ul class="collapse">
+  <li><a href="#definición" id="toc-definición" class="nav-link" data-scroll-target="#definición">Definición</a></li>
+  <li><a href="#conceptos-clave" id="toc-conceptos-clave" class="nav-link" data-scroll-target="#conceptos-clave">Conceptos Clave</a></li>
+  </ul></li>
+  <li><a href="#tecnologías-de-procesamiento-distribuido" id="toc-tecnologías-de-procesamiento-distribuido" class="nav-link" data-scroll-target="#tecnologías-de-procesamiento-distribuido">4. Tecnologías de Procesamiento Distribuido</a>
+  <ul class="collapse">
+  <li><a href="#dominios-de-aplicación" id="toc-dominios-de-aplicación" class="nav-link" data-scroll-target="#dominios-de-aplicación">Dominios de Aplicación</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -140,7 +189,17 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">1era clase</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Estadisticas</div>
+    <div class="quarto-category">Big Data</div>
+    <div class="quarto-category">Datos</div>
+    <div class="quarto-category">Base de datos</div>
+    <div class="quarto-category">Hadoop</div>
+    <div class="quarto-category">Spark</div>
+    <div class="quarto-category">Ciencia de datos</div>
+    <div class="quarto-category">Internet</div>
+  </div>
+  </div>
 
 
 
@@ -168,11 +227,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="titulo-1era-clase" class="level1">
-<h1>Titulo 1era clase</h1>
-<!-- obsidian-sync:{"source":"HPCIII/1era Clase.md","hash":"e8cd5fce29c365841b0a8cda1c2b93ea7b4fcd2fc1348537b6746511bcf97000"} -->
+<section id="datos-en-internet-almacenamiento-tráfico-y-big-data" class="level1">
+<h1>Datos en Internet: Almacenamiento, Tráfico y Big Data</h1>
+<section id="el-internet-en-tiempo-real" class="level2">
+<h2 class="anchored" data-anchor-id="el-internet-en-tiempo-real">1. El Internet en Tiempo Real</h2>
+<p>El flujo de información actual supera las capacidades de procesamiento tradicionales. Según datos de <em>Internet Live Stats</em>, cada segundo se generan:</p>
+<ul>
+<li><strong>Interacción Social:</strong> ~6,000 publicaciones en X (Twitter).</li>
+<li><strong>Búsqueda de Información:</strong> &gt;40,000 consultas en Google.</li>
+<li><strong>Comunicación:</strong> &gt;2,000,000 de correos electrónicos enviados.</li>
+</ul>
+<section id="crecimiento-y-escala-de-la-web" class="level3">
+<h3 class="anchored" data-anchor-id="crecimiento-y-escala-de-la-web">Crecimiento y Escala de la Web</h3>
+<ul>
+<li><strong>Hitos de Sitios Web:</strong> En septiembre de 2014 se alcanzó la cifra de <strong>1,000 millones de sitios</strong>.</li>
+<li><strong>Web Indexada:</strong> Para marzo de 2016, la internet superficial contaba con <strong>4.66 mil millones de páginas</strong>. En 2019, esta cifra ascendió a <strong>5.85 mil millones</strong>.</li>
+<li><strong>Tasa de Expansión:</strong> Desde 2012, el tamaño de la red se ha duplicado prácticamente cada año.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="la-era-del-zettabyte" class="level2">
+<h2 class="anchored" data-anchor-id="la-era-del-zettabyte">2. La Era del Zettabyte</h2>
+<p>Para comprender la escala del Big Data, es fundamental manejar las unidades de almacenamiento a nivel de centros de datos.</p>
+<section id="jerarquía-de-unidades" class="level3">
+<h3 class="anchored" data-anchor-id="jerarquía-de-unidades">Jerarquía de Unidades</h3>
+<ul>
+<li><strong>Petabyte (PB):</strong> <span class="math inline">\(10^{15}\)</span> bytes.</li>
+<li><strong>Exabyte (EB):</strong> <span class="math inline">\(1,000\)</span> PB o <span class="math inline">\(10^{18}\)</span> bytes.</li>
+<li><strong>Zettabyte (ZB):</strong> <span class="math inline">\(1,000\)</span> EB o <span class="math inline">\(10^{21}\)</span> bytes.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Nota de referencia:</strong> Un solo zettabyte equivale a <strong>36,000 años de video en HD</strong> o a reproducir el catálogo completo de Netflix más de 3,000 veces.</p>
+</blockquote>
+</section>
+<section id="proyecciones-de-datos" class="level3">
+<h3 class="anchored" data-anchor-id="proyecciones-de-datos">Proyecciones de Datos</h3>
+<ul>
+<li><strong>Capacidad Global:</strong> En 2014, la capacidad de almacenamiento se estimaba en <strong>1 millón de exabytes</strong>.</li>
+<li><strong>Crecimiento Exponencial:</strong> Para 2020, el volumen de datos alcanzó los <strong>40 zettabytes</strong>, impulsado por la integración de más de <strong>50 mil millones de dispositivos</strong> conectados.</li>
+<li><strong>Infraestructura de Gigantes:</strong> Empresas como Google, Amazon, Microsoft y Facebook gestionan colectivamente más de <strong>1,200 petabytes</strong>.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="fundamentos-de-big-data" class="level2">
+<h2 class="anchored" data-anchor-id="fundamentos-de-big-data">3. Fundamentos de Big Data</h2>
+<section id="definición" class="level3">
+<h3 class="anchored" data-anchor-id="definición">Definición</h3>
+<p>Se refiere a conjuntos de datos cuyo <strong>volumen</strong>, <strong>velocidad</strong> o <strong>variedad</strong> son tan grandes que resulta inviable su almacenamiento, gestión o análisis mediante bases de datos relacionales o herramientas tradicionales.</p>
+</section>
+<section id="conceptos-clave" class="level3">
+<h3 class="anchored" data-anchor-id="conceptos-clave">Conceptos Clave</h3>
+<ul>
+<li><strong>Dato vs.&nbsp;Información:</strong> El <em>dato</em> es la unidad mínima simbólica (hecho aislado); la <em>información</em> es el conjunto de datos procesados que permiten la toma de decisiones.</li>
+<li><strong>Categorización:</strong> * <em>Estructurados:</em> Tablas de bases de datos, CSV.
+<ul>
+<li><em>No estructurados:</em> Video, audio, logs de servidores, publicaciones en redes sociales.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="tecnologías-de-procesamiento-distribuido" class="level2">
+<h2 class="anchored" data-anchor-id="tecnologías-de-procesamiento-distribuido">4. Tecnologías de Procesamiento Distribuido</h2>
+<p>Dada la naturaleza masiva de estos datos, se requieren entornos que permitan el cómputo paralelo y distribuido:</p>
+<ul>
+<li><strong>Apache Hadoop:</strong> Framework de código abierto diseñado para el almacenamiento (HDFS) y procesamiento (MapReduce) distribuido en clusters de hardware convencional.</li>
+<li><strong>Apache Spark:</strong> Motor de procesamiento de datos optimizado para trabajar en memoria (RAM), lo que lo hace significativamente más rápido que Hadoop para análisis iterativos y algoritmos complejos.</li>
+</ul>
+<section id="dominios-de-aplicación" class="level3">
+<h3 class="anchored" data-anchor-id="dominios-de-aplicación">Dominios de Aplicación</h3>
+<ol type="1">
+<li><strong>Healthcare:</strong> Telemonitoreo y análisis de interoperabilidad clínica (HL7 FHIR).</li>
+<li><strong>Finanzas:</strong> Modelos predictivos para detección de fraude.</li>
+<li><strong>IoT y Sistemas Ciberfísicos:</strong> Procesamiento de flujos de datos provenientes de sensores industriales.</li>
+<li><strong>Retail:</strong> Personalización masiva basada en comportamiento del usuario.</li>
+</ol>
+<hr>
+<p><strong>Fuentes:</strong> Cisco Visual Networking Index, Internet Live Stats, Supercomputing Frontiers and Innovations (2014). <img src="INTERNET_BUSY.jpg" class="img-fluid"> <img src="BIG_DATA.jpg" class="img-fluid"><img src="TRAFFIC.jpg" class="img-fluid"></p>
+<!-- obsidian-sync:{"source":"HPCIII/1era Clase.md","hash":"087b13dd91958d953a6f05d444910403e7dbe363674451cf979f1cf2fa4cc462"} -->
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

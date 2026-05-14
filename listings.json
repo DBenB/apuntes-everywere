@@ -6,15 +6,12 @@
     ]
   },
   {
-    "listing": "/Digital Garden/Sis_Distribuidos/index.html",
-    "items": [
-      "/Digital Garden/Sis_Distribuidos/sin-t-tulo.html"
-    ]
-  },
-  {
     "listing": "/Digital Garden/TS_IA_Generativa/index.html",
     "items": [
-      "/Digital Garden/TS_IA_Generativa/lntro.html"
+      "/Digital Garden/TS_IA_Generativa/1era-clase.html",
+      "/Digital Garden/TS_IA_Generativa/2nda-clase.html",
+      "/Digital Garden/TS_IA_Generativa/lntro.html",
+      "/Digital Garden/TS_IA_Generativa/machine-learning-p1.html"
     ]
   },
   {
@@ -24,6 +21,13 @@
       "/Digital Garden/Sis_Colaborativos/index.html",
       "/Digital Garden/Sis_Distribuidos/index.html",
       "/Digital Garden/TS_IA_Generativa/index.html"
+    ]
+  },
+  {
+    "listing": "/Digital Garden/Sis_Distribuidos/index.html",
+    "items": [
+      "/Digital Garden/Sis_Distribuidos/presentacion.html",
+      "/Digital Garden/Sis_Distribuidos/sin-t-tulo.html"
     ]
   },
   {
